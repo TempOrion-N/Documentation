@@ -106,7 +106,7 @@ elif [ "$2" != "" ]; then		#Device name given. Check flags
 	# compile
 	eval "lunch orion_$2-userdebug"
     cores=$(nproc | tee >&1)
-	eval "make -j$cores" bacon
+	eval "make -j$cores" orion
 	#eval "brunch $2 2>&1 | tee $(date +%Y%m%d)-$device.log"
 
 else
